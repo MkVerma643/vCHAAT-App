@@ -1,0 +1,4 @@
+#Mon Aug 27 21:05:31 IST 2018
+base.0=C\:\\Users\\mukes\\AndroidStudioProjects\\vCHAT\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex

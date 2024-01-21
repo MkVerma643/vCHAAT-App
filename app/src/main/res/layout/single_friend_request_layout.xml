@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_single_req_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/mypic" />
+
+    <TextView
+        android:id="@+id/user_single_req_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_single_req_image"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/user_single_req_image"
+        android:text="Display Name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/user_single_req_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_single_req_name"
+        android:layout_below="@+id/user_single_req_name"
+        android:layout_marginTop="10dp"
+        android:text="User Status" />
+
+    <Button
+        android:id="@+id/req_accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/user_single_req_status"
+        android:layout_below="@+id/user_single_req_status"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#94f729"
+        android:text="Accept" />
+
+    <Button
+        android:id="@+id/req_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/req_accept_btn"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/req_accept_btn"
+        android:background="#fe5050"
+        android:text="Reject" />
+
+
+</RelativeLayout>

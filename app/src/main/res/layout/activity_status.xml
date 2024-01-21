@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prem.letstalk.StatusActivity">
+
+    <include
+        android:id="@+id/status_app_bar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <EditText
+        android:id="@+id/edit_your_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Your Status.."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/modify_your_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_your_status"
+        android:layout_below="@+id/edit_your_status"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:text="Update Status" />
+
+</RelativeLayout>
